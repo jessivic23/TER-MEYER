@@ -343,7 +343,7 @@ if "df_res" in st.session_state:
         )
 
         # ── Pivot qadm para B y Df ────────────────────────────────────────────
-        st.subheader("📊 Capacidad Admisible — Tabla Pivote")
+        st.subheader("📊 Capacidad Admisible)
         metodo_pivot = st.selectbox("Método para tabla pivote",
                                     ["qa General (t/m²)", "qa Terzaghi (t/m²)"])
         pivot = df_res.pivot(index="Df (m)", columns="B (m)", values=metodo_pivot).round(2)
